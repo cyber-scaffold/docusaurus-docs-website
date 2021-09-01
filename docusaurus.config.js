@@ -6,7 +6,7 @@ module.exports = {
   noIndex:true,
   title: "文档模板",
   tagline: "Dinosaurs are cool",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   baseUrl: "/",
   url: "https://your-docusaurus-test-site.com",
