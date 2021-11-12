@@ -7,6 +7,7 @@
     "docusaurus": "docusaurus",
     "dev": "docusaurus start",
     "build": "docusaurus build && gh-pages -d build",
+    "export": "mr-pdf --outputPDFFilename=./static/output.pdf --pdfMargin=20 --excludeSelectors=\"footer\" --paginationSelector=\".pagination-nav__item--next > a\" --initialDocsURL=\"\"",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -40,6 +41,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "mdx-mermaid": "^1.1.1",
+    "mermaid": "^8.13.3",
+    "mr-pdf": "^0.2.3"
   }
 }
