@@ -21,9 +21,11 @@ module.exports = {
       darkTheme: darkCodeTheme,
     }
   },
+  themes: ['@docusaurus/theme-live-codeblock'],
   presets: [
     ["@docusaurus/preset-classic",{
       docs: {
+        remarkPlugins: [require("mdx-mermaid")],
         sidebarPath: require.resolve("./configs/sidebars.js"),
         // Please change this to your repo.
         editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
